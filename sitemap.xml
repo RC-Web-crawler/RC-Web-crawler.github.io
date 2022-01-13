@@ -6,12 +6,13 @@
   </url><url>
     <loc>https://rc-web-crawler.github.io/3_css/</loc>
   </url><url>
+    <loc>https://rc-web-crawler.github.io/4_demo/</loc>
+  </url><url>
     <loc>https://rc-web-crawler.github.io/</loc>
   </url><url>
-    <loc>https://rc-web-crawler.github.io/credits/</loc>
-    <priority>0</priority>
-  </url><url>
     <loc>https://rc-web-crawler.github.io/categories/</loc>
+  </url><url>
+    <loc>https://rc-web-crawler.github.io/credits/</loc>
   </url><url>
     <loc>https://rc-web-crawler.github.io/tags/</loc>
   </url>
