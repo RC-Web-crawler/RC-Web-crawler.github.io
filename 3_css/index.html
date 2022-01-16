@@ -12,27 +12,31 @@
     <title>CSS selectorts &amp; Xpath : Web Crawler</title>
 
     
-    <link href="../css/nucleus.css?1642058944" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1642058944" rel="stylesheet">
-    <link href="../css/hybrid.css?1642058944" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1642058944" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1642058944" rel="stylesheet">
-    <link href="../css/auto-complete.css?1642058944" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1642058944" rel="stylesheet">
-    <link href="../css/theme.css?1642058944" rel="stylesheet">
-    <link href="../css/tabs.css?1642058944" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1642058944" rel="stylesheet">
+    <link href="../css/nucleus.css?1642318845" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1642318845" rel="stylesheet">
+    <link href="../css/hybrid.css?1642318845" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1642318845" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1642318845" rel="stylesheet">
+    <link href="../css/auto-complete.css?1642318845" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1642318845" rel="stylesheet">
+    <link href="../css/theme.css?1642318845" rel="stylesheet">
+    <link href="../css/tabs.css?1642318845" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1642318845" rel="stylesheet">
     
-    <link href="../css/theme-green.css?1642058944" rel="stylesheet">
+    <link href="../css/theme-green.css?1642318845" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1642058944"></script>
+    <script src="../js/jquery-3.3.1.min.js?1642318845"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
       
     </style>
     
@@ -55,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1642058944"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1642058944"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1642318845"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1642318845"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/rc-web-crawler.github.io\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1642058944"></script>
+<script type="text/javascript" src="../js/search.js?1642318845"></script>
 
     
   </div>
@@ -96,6 +100,30 @@
         ">
       <a href="../1_web_at_glance/">
           1. Web at a glance
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_html_elements/" title="HTML elements &amp; Tree Structure" class="dd-item
+        
+        
+        
+        ">
+      <a href="../2_html_elements/">
+          2. HTML elements
           
       </a>
       
@@ -367,25 +395,25 @@
 <p>Selects all elements</p>
 <p>element</p>
 <p>p</p>
-<p>Selects all <!-- raw HTML omitted --> elements</p>
+<p>Selects all <p> elements</p>
 <p>element.class</p>
 <p>p.intro</p>
-<p>Selects all <!-- raw HTML omitted --> elements with class=“intro”</p>
+<p>Selects all <p> elements with class=“intro”</p>
 <p>element,element</p>
 <p>div, p</p>
-<p>Selects all <!-- raw HTML omitted --> elements and all <!-- raw HTML omitted --> elements</p>
+<p>Selects all <div> elements and all <p> elements</p>
 <p>element element</p>
 <p>div p</p>
-<p>Selects all <!-- raw HTML omitted --> elements inside <!-- raw HTML omitted --> elements</p>
+<p>Selects all <p> elements inside <div> elements</p>
 <p>element&gt;element</p>
 <p>div &gt; p</p>
-<p>Selects all <!-- raw HTML omitted --> elements where the parent is a <!-- raw HTML omitted --> element</p>
+<p>Selects all <p> elements where the parent is a <div> element</p>
 <p>element+element</p>
 <p>div + p</p>
-<p>Selects the first <!-- raw HTML omitted --> element that is placed immediately after <!-- raw HTML omitted --> elements</p>
+<p>Selects the first <p> element that is placed immediately after <div> elements</p>
 <p>element1~element2</p>
 <p>p ~ ul</p>
-<p>Selects every <!-- raw HTML omitted --> element that is preceded by a <!-- raw HTML omitted --> element</p>
+<p>Selects every <ul> element that is preceded by a <p> element</p>
 <p>[attribute]</p>
 <p>[target]</p>
 <p>Selects all elements with a target attribute</p>
@@ -400,13 +428,13 @@
 <p>Selects all elements with a lang attribute value equal to “en” or starting with “en-”</p>
 <p>[attribute^=value]</p>
 <p>a[href^=“https”]</p>
-<p>Selects every <!-- raw HTML omitted --> element whose href attribute value begins with “https”</p>
+<p>Selects every <a> element whose href attribute value begins with “https”</p>
 <p>[attribute$=value]</p>
 <p>a[href$=“.pdf”]</p>
-<p>Selects every <!-- raw HTML omitted --> element whose href attribute value ends with “.pdf”</p>
+<p>Selects every <a> element whose href attribute value ends with “.pdf”</p>
 <p>[attribute*=value]</p>
 <p>a[href*=“w3schools”]</p>
-<p>Selects every <!-- raw HTML omitted --> element whose href attribute value contains the substring “w3schools”</p>
+<p>Selects every <a> element whose href attribute value contains the substring “w3schools”</p>
 <h3 id="expression">Expression</h3>
 <p>Expression</p>
 <p>Example</p>
@@ -416,37 +444,37 @@
 <p>Selects the active link</p>
 <p>::after</p>
 <p>p::after</p>
-<p>Insert something after the content of each <!-- raw HTML omitted --> element</p>
+<p>Insert something after the content of each <p> element</p>
 <p>::before</p>
 <p>p::before</p>
-<p>Insert something before the content of each <!-- raw HTML omitted --> element</p>
+<p>Insert something before the content of each <p> element</p>
 <p>:checked</p>
 <p>input:checked</p>
-<p>Selects every checked <!-- raw HTML omitted --> element</p>
+<p>Selects every checked <input> element</p>
 <p>:default</p>
 <p>input:default</p>
-<p>Selects the default <!-- raw HTML omitted --> element</p>
+<p>Selects the default <input> element</p>
 <p>:disabled</p>
 <p>input:disabled</p>
-<p>Selects every disabled <!-- raw HTML omitted --> element</p>
+<p>Selects every disabled <input> element</p>
 <p>:empty</p>
 <p>p:empty</p>
-<p>Selects every <!-- raw HTML omitted --> element that has no children (including text nodes)</p>
+<p>Selects every <p> element that has no children (including text nodes)</p>
 <p>:enabled</p>
 <p>input:enabled</p>
-<p>Selects every enabled <!-- raw HTML omitted --> element</p>
+<p>Selects every enabled <input> element</p>
 <p>:first-child</p>
 <p>p:first-child</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the first child of its parent</p>
+<p>Selects every <p> element that is the first child of its parent</p>
 <p>::first-letter</p>
 <p>p::first-letter</p>
-<p>Selects the first letter of every <!-- raw HTML omitted --> element</p>
+<p>Selects the first letter of every <p> element</p>
 <p>::first-line</p>
 <p>p::first-line</p>
-<p>Selects the first line of every <!-- raw HTML omitted --> element</p>
+<p>Selects the first line of every <p> element</p>
 <p>:first-of-type</p>
 <p>p:first-of-type</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the first <!-- raw HTML omitted --> element of its parent</p>
+<p>Selects every <p> element that is the first <p> element of its parent</p>
 <p>:focus</p>
 <p>input:focus</p>
 <p>Selects the input element which has focus</p>
@@ -467,13 +495,13 @@
 <p>Selects all input elements with an invalid value</p>
 <p>:lang(language)</p>
 <p>p:lang(it)</p>
-<p>Selects every <!-- raw HTML omitted --> element with a lang attribute equal to “it” (Italian)</p>
+<p>Selects every <p> element with a lang attribute equal to “it” (Italian)</p>
 <p>:last-child</p>
 <p>p:last-child</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the last child of its parent</p>
+<p>Selects every <p> element that is the last child of its parent</p>
 <p>:last-of-type</p>
 <p>p:last-of-type</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the last <!-- raw HTML omitted --> element of its parent</p>
+<p>Selects every <p> element that is the last <p> element of its parent</p>
 <p>:link</p>
 <p>a:link</p>
 <p>Selects all unvisited links</p>
@@ -482,25 +510,25 @@
 <p>Selects the markers of list items</p>
 <p>:not(selector)</p>
 <p>:not(p)</p>
-<p>Selects every element that is not a <!-- raw HTML omitted --> element</p>
+<p>Selects every element that is not a <p> element</p>
 <p>:nth-child(n)</p>
 <p>p:nth-child(2)</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the second child of its parent</p>
+<p>Selects every <p> element that is the second child of its parent</p>
 <p>:nth-last-child(n)</p>
 <p>p:nth-last-child(2)</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the second child of its parent, counting from the last child</p>
+<p>Selects every <p> element that is the second child of its parent, counting from the last child</p>
 <p>:nth-last-of-type(n)</p>
 <p>p:nth-last-of-type(2)</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the second <!-- raw HTML omitted --> element of its parent, counting from the last child</p>
+<p>Selects every <p> element that is the second <p> element of its parent, counting from the last child</p>
 <p>:nth-of-type(n)</p>
 <p>p:nth-of-type(2)</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the second <!-- raw HTML omitted --> element of its parent</p>
+<p>Selects every <p> element that is the second <p> element of its parent</p>
 <p>:only-of-type</p>
 <p>p:only-of-type</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the only <!-- raw HTML omitted --> element of its parent</p>
+<p>Selects every <p> element that is the only <p> element of its parent</p>
 <p>:only-child</p>
 <p>p:only-child</p>
-<p>Selects every <!-- raw HTML omitted --> element that is the only child of its parent</p>
+<p>Selects every <p> element that is the only child of its parent</p>
 <p>:optional</p>
 <p>input:optional</p>
 <p>Selects input elements with no “required” attribute</p>
@@ -918,6 +946,22 @@ check_element_text(html = html, xpath = &quot;//t/ancestor::div&quot;)
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -958,7 +1002,7 @@ check_element_text(html = html, xpath = &quot;//t/ancestor::div&quot;)
 	 
 	 
 		
-			<a class="nav nav-prev" href="../1_web_at_glance/" title="Web at a glance"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../2_html_elements/" title="HTML elements &amp; Tree Structure"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="../4_demo/" title="Demo: Web Scraping with R/Python" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -971,19 +1015,19 @@ check_element_text(html = html, xpath = &quot;//t/ancestor::div&quot;)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1642058944"></script>
-    <script src="../js/perfect-scrollbar.min.js?1642058944"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1642058944"></script>
-    <script src="../js/jquery.sticky.js?1642058944"></script>
-    <script src="../js/featherlight.min.js?1642058944"></script>
-    <script src="../js/highlight.pack.js?1642058944"></script>
+    <script src="../js/clipboard.min.js?1642318845"></script>
+    <script src="../js/perfect-scrollbar.min.js?1642318845"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1642318845"></script>
+    <script src="../js/jquery.sticky.js?1642318845"></script>
+    <script src="../js/featherlight.min.js?1642318845"></script>
+    <script src="../js/highlight.pack.js?1642318845"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1642058944"></script>
-    <script src="../js/learn.js?1642058944"></script>
-    <script src="../js/hugo-learn.js?1642058944"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1642318845"></script>
+    <script src="../js/learn.js?1642318845"></script>
+    <script src="../js/hugo-learn.js?1642318845"></script>
     
         
-            <script src="../mermaid/mermaid.js?1642058944"></script>
+            <script src="../mermaid/mermaid.js?1642318845"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
