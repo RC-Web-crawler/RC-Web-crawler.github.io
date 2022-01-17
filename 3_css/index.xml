@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3_Csses on Web Crawler</title>
+    <title>Web Crawler</title>
     <link>https://rc-web-crawler.github.io/3_css/</link>
-    <description>Recent content in 3_Csses on Web Crawler</description>
+    <description>Recent content on Web Crawler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://rc-web-crawler.github.io/3_css/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://rc-web-crawler.github.io/3_css/_index_old/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rc-web-crawler.github.io/3_css/_index_old/</guid>
-      <description>songren 12/27/2021 Introduction XPath is a query language for selecting nodes from an XML document. In addition, XPath may be used to compute values from the content of an XML document. XPath was defined by the World Wide Web Consortium. CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.</description>
-    </item>
-    
   </channel>
 </rss>
