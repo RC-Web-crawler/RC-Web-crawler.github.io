@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../images/favicon.png" type="image/png">
 
-    <title>HTML elements &amp; Tree Structure : Web Crawler</title>
+    <title>Setup Your Python Environment : Web Crawler</title>
 
     
     <link href="../css/nucleus.css?1644374784" rel="stylesheet">
@@ -41,7 +41,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../2_html_elements/">
+  <body class="" data-url="../5_python_env/">
     <nav id="sidebar" class="">
 
 
@@ -118,8 +118,8 @@
   
     
     <li data-nav-id="/2_html_elements/" title="HTML elements &amp; Tree Structure" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="../2_html_elements/">
@@ -190,8 +190,8 @@
   
     
     <li data-nav-id="/5_python_env/" title="Setup Your Python Environment" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="../5_python_env/">
@@ -261,7 +261,7 @@
                   <span class="links">
                  
                  
-                   HTML elements &amp; Tree Structure
+                   Setup Your Python Environment
                  
                   </span>
                 </div>
@@ -270,13 +270,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#2-html-elements--tree-structure"><strong>2. HTML elements &amp; Tree Structure</strong></a>
-      <ul>
-        <li><a href="#21-html-elements"><strong>2.1 HTML elements</strong></a></li>
-        <li><a href="#22-html-attributes"><strong>2.2 HTML Attributes</strong></a></li>
-        <li><a href="#23-tree-structure-of-html-document"><strong>2.3 Tree structure of HTML document</strong></a></li>
-      </ul>
-    </li>
+    <li><a href="#prepare-software">Prepare software</a></li>
+    <li><a href="#setup-proxy-servers">Setup proxy servers</a></li>
+    <li><a href="#setup-your-own-environment">Setup your own environment</a></li>
   </ul>
 </nav>
     </div>
@@ -294,7 +290,7 @@
           
             <h1>
               
-              HTML elements &amp; Tree Structure
+              Setup Your Python Environment
             </h1>
           
 
@@ -302,137 +298,72 @@
 
 
 
-	<ul>
-<li><a href="#2-html-elements--tree-structure"><strong>2. HTML elements &amp; Tree Structure</strong></a>
-<ul>
-<li><a href="#21-html-elements"><strong>2.1 HTML elements</strong></a></li>
-<li><a href="#22-html-attributes"><strong>2.2 HTML Attributes</strong></a></li>
-<li><a href="#23-tree-structure-of-html-document"><strong>2.3 Tree structure of HTML document</strong></a>
-<ul>
-<li><a href="#231-relationship-of-nodes"><strong>2.3.1 Relationship of Nodes</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-html-elements--tree-structure"><strong>2. HTML elements &amp; Tree Structure</strong></h2>
-<h3 id="21-html-elements"><strong>2.1 HTML elements</strong></h3>
-<p>An HTML element is defined by a <strong>start tag</strong>, <strong>some content</strong>, and an <strong>end tag</strong>. The HTML element is everything from the start tag to the end tag:</p>
-<p><code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code></p>
-<blockquote>
-<p><em>Examples:</em><br>
-<code>&lt;h1&gt;欢迎来到爬虫小组的网页！&lt;/h1&gt;</code><br>
-<code>&lt;p&gt;这是一个简单的测试页 &lt;/p&gt;</code></p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Start tag</th>
-<th>Element content</th>
-<th>End tag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;h1&gt;</code></td>
-<td>欢迎来到爬虫小组的网页</td>
-<td><code>&lt;/h1&gt;</code></td>
-</tr>
-<tr>
-<td><code>&lt;p&gt;</code></td>
-<td>这是一个简单的测试页</td>
-<td><code>&lt;p&gt;</code></td>
-</tr>
-<tr>
-<td><code>&lt;br&gt;</code></td>
-<td><em>none</em></td>
-<td><em>none</em></td>
-</tr>
-</tbody>
-</table>
-<p><span style="background-color:rgb(255, 246, 143);padding:3px 0px;font-family:Georgia"> <strong>Note</strong>: Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements. Empty elements do not have an end tag!</span></p>
-<p><strong>Common elements explained:</strong></p>
-<blockquote>
-<p>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document.<br>
-The <code>&lt;html&gt;</code> element is the root element of an HTML page<br>
-The <code>&lt;head&gt;</code> element contains meta information about the HTML page<br>
-The <code>&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser&rsquo;s title bar or in the page&rsquo;s tab)<br>
-The <code>&lt;body&gt;</code> element defines the document&rsquo;s body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.<br>
-The <code>&lt;h1&gt;&lt;h2&gt;</code> element defines a large heading<br>
-The <code>&lt;p&gt;</code> element defines a paragraph</p>
-</blockquote>
-<h3 id="22-html-attributes"><strong>2.2 HTML Attributes</strong></h3>
-<p>HTML attributes provide additional information about HTML elements. All HTML elements can have attributes. Attributes are always specified in the <strong>start tag</strong>. Attributes usually come in name/value pairs like: <strong>name=&ldquo;value&rdquo;</strong>.</p>
-<ul>
+	<h2 id="prepare-software">Prepare software</h2>
+<ol>
+<li>Install the software <strong>Anaconda</strong> through <a href="https://sccm.novartis.intra/esd/">Novartis Software Self-Service</a>
+<img src="./1.JPG" alt="image1"></li>
+</ol>
+<h2 id="setup-proxy-servers">Setup proxy servers</h2>
+<ol>
 <li>
-<p>The <em><strong>href</strong></em> Attribute：<br> The <code>&lt;a&gt;</code> tag defines a hyperlink. The <code>href</code> attribute specifies the URL of the page the link goes to. <br>
-<em>Example</em>:<br> <span style="background-color:rgb(211,211,211);padding:3px 0px;font-family:Georgia;font-size:12px">
-<code>&lt;a href=&quot;http://gitlabce.apps.dit-prdocp.novartis.net/YUHAY/web-crawler-do.git&quot;&gt;Web Crawler DO&lt;/a&gt;</code></span></p>
+<p>Create a file named <strong>.condarc</strong> located in the path: C:\Users\521id<br>
+<img src="./2.JPG" alt="image2"></p>
 </li>
 <li>
-<p>The <em><strong>src</strong></em> Attribute：<br> The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed. <br>
-<em>Example</em>:<br> <span style="background-color:rgb(211,211,211);padding:3px 0px;font-family:Georgia;font-size:13px">
-<code>&lt;img src=&quot;https://www.w3schools.com/js/pic_bulboff.gif&quot;&gt;</code></span></p>
+<p>Open the file .condarc using Notepad++ or UltraEdit as you like</p>
 </li>
 <li>
-<p>The <em><strong>style</strong></em> Attribute：<br> The <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more. <br>
-<em>Example</em>:<br> <span style="background-color:rgb(211,211,211);padding:3px 0px;font-family:Georgia;font-size:13px">
-<code>&lt;img style=&quot;width:30px&quot;&gt;</code></span></p>
-</li>
-</ul>
+<p>Add below texts into this file (do not remove spaces or indents before &ldquo;-&rdquo; and &ldquo;http&rdquo;)</p>
 <blockquote>
-<p>The <code>width</code> and <code>height</code> attributes of <code>&lt;img&gt;</code> provide size information for images<br> 
-The <code>alt</code> attribute of <code>&lt;img&gt;</code> provides an alternate text for an image<br> 
-The <code>lang</code> attribute of the <code>&lt;html&gt;</code> tag declares the language of the Web page<br> 
-The <code>title</code> attribute defines some extra information about an element</p>
+<p>ssl_verify: true</p>
+<p>channels:</p>
+<p>  - defaults</p>
+<p>  - https<a href=""></a>://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</p>
+<p>  - https<a href=""></a>://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</p>
+<p>proxy_servers:</p>
+<p>  http: http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2011</p>
+<p>  https: http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2011</p>
+<p>show_channel_urls: true</p>
 </blockquote>
-<h3 id="23-tree-structure-of-html-document"><strong>2.3 Tree structure of HTML document</strong></h3>
-<p>HTML documents can be treated as trees of nodes. Look at the following document:</p>
-<pre tabindex="0"><code>&lt;books&gt;
-  &lt;book&gt;
-    &lt;title lang=&quot;en&quot;&gt;Harry Potter&lt;/title&gt;
-    &lt;author&gt;J K. Rowling&lt;/author&gt;
-    &lt;year&gt;2005&lt;/year&gt;
-    &lt;price&gt;29.99&lt;/price&gt;
-  &lt;/book&gt;
-&lt;/books&gt;
-</code></pre><p>The topmost element of the tree is called the <strong>root element</strong>. <code>&lt;books&gt;</code> is the root element node of the above tree. There are other element nodes, such as <code>&lt;author&gt;J K. Rowling&lt;/author&gt;</code>, <code>&lt;year&gt;2005&lt;/year&gt;</code>, <em>etc</em>.</p>
-<p>It also looks like the path of computer file systems:</p>
-<img src="https://www.w3schools.com/xml/img_xpath_folders.jpg">
-<h4 id="231-relationship-of-nodes"><strong>2.3.1 Relationship of Nodes</strong></h4>
-<p><em>Example 1:</em></p>
-<pre tabindex="0"><code>&lt;book&gt;
-  &lt;title&gt;Harry Potter&lt;/title&gt;
-  &lt;author&gt;J K. Rowling&lt;/author&gt;
-  &lt;year&gt;2005&lt;/year&gt;
-  &lt;price&gt;29.99&lt;/price&gt;
-&lt;/book&gt;
-</code></pre><p><strong>1. Parent</strong></p>
-<p>Each element has one parent.</p>
-<p>In the example 1; the <code>book</code> element is the parent of the <code>title</code>, <code>author</code>, <code>year</code>, and <code>price</code>.</p>
-<p><strong>2. Children</strong></p>
-<p>Element nodes may have zero, one or more children.</p>
-<p>In the example 1; the <code>title</code>, <code>author</code>, <code>year</code>, and <code>price</code> elements are all children of the <code>book</code> element.</p>
-<p><strong>3. Siblings</strong></p>
-<p>Nodes that have the same parent.</p>
-<p>In the example 1; the <code>title</code>, <code>author</code>, <code>year</code>, and <code>price</code> elements are all siblings.</p>
-<p><em>Example 2:</em></p>
-<pre tabindex="0"><code>&lt;books&gt;
-
-&lt;book&gt;
-  &lt;title&gt;Harry Potter&lt;/title&gt;
-  &lt;author&gt;J K. Rowling&lt;/author&gt;
-  &lt;year&gt;2005&lt;/year&gt;
-  &lt;price&gt;29.99&lt;/price&gt;
-&lt;/book&gt;
-
-&lt;/books&gt;
-</code></pre><p><strong>4. Ancestors</strong></p>
-<p>A node&rsquo;s parent, parent&rsquo;s parent, etc.</p>
-<p>In the example 2; the ancestors of the <code>title</code> element are the <code>book</code> element and the <code>books</code> element.</p>
-<p><strong>5. Descendants</strong></p>
-<p>A node&rsquo;s children, children&rsquo;s children, etc.</p>
-<p>In the example 2; descendants of the <code>books</code> element are the <code>book</code>, <code>title</code>, <code>author</code>, <code>year</code>, and <code>price</code> elements.</p>
+</li>
+<li>
+<p>Save and quit</p>
+</li>
+</ol>
+<h2 id="setup-your-own-environment">Setup your own environment</h2>
+<ol>
+<li>
+<p>Open <strong>Anaconda Navigator</strong> to create your own environment. (Be patient after clicking <em>Create</em> and remember the environment name)
+<img src="./3.JPG" alt="image3"></p>
+</li>
+<li>
+<p>Now you can install any application that you needed e.g. Jupyter Notebook, VS Code in your own environment.</p>
+</li>
+<li>
+<p>Search &ldquo;<strong>env</strong>&rdquo; in windows search. Choose <em><strong>Edit environment variables for your account</strong></em>.
+<img src="./4.jpg" alt="image4"></p>
+</li>
+<li>
+<p>Choose <em><strong>Path</strong></em>, and then click <em><strong>Edit</strong></em>. Then click <em><strong>New</strong></em> to add below environment variables. (&ldquo;py37&rdquo; is the environment name which is created in Anaconda Navigator and you can type in your own)
+<img src="./5.JPG" alt="image5">
+<img src="./6.JPG" alt="image6"></p>
+</li>
+<li>
+<p>Open <strong>Anaconda Prompt (your envr name)</strong>. Install packages using below command lines.</p>
+<blockquote>
+<p>pip install --proxy=http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2010 -U flask (package name) --user -i https<a href=""></a>://pypi.tuna.tsinghua.edu.cn/simple</p>
+</blockquote>
+</li>
+<li>
+<p>Open <strong>Command Prompt</strong> by press Windows + R and type &ldquo;cmd&rdquo;. Install packages using below command lines.</p>
+<blockquote>
+<p>C:\Users\521id\.conda\envs\your envr name\python.exe  -m pip install --proxy=http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2010 -U flask (package name)  --user -i https<a href=""></a>://pypi.tuna.tsinghua.edu.cn/simple</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Keep learning and enjoy coding!</strong></p>
+</li>
+</ol>
 
 
 
@@ -492,26 +423,6 @@ The <code>title</code> attribute defines some extra information about an element
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -543,6 +454,23 @@ The <code>title</code> attribute defines some extra information about an element
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -564,10 +492,10 @@ The <code>title</code> attribute defines some extra information about an element
 	 
 	 
 		
-			<a class="nav nav-prev" href="../1_web_at_glance/" title="Web at a glance"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../4_demo/" title="Demo: Web Scraping with R/Python"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../3_css/" title="CSS selectorts &amp; Xpath" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../1_web_at_glance/" title="Web at a glance" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
