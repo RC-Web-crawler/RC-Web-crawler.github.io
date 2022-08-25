@@ -9,25 +9,25 @@
 
     <link rel="icon" href="../images/favicon.png" type="image/png">
 
-    <title>Setup Your Python Environment : Web Crawler</title>
+    <title>eCRF Index Shiny App : Web Crawler</title>
 
     
-    <link href="../css/nucleus.css?1644387652" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1644387652" rel="stylesheet">
-    <link href="../css/hybrid.css?1644387652" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1644387652" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1644387652" rel="stylesheet">
-    <link href="../css/auto-complete.css?1644387652" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1644387652" rel="stylesheet">
-    <link href="../css/theme.css?1644387652" rel="stylesheet">
-    <link href="../css/tabs.css?1644387652" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1644387652" rel="stylesheet">
+    <link href="../css/nucleus.css?1661402931" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1661402931" rel="stylesheet">
+    <link href="../css/hybrid.css?1661402931" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1661402931" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1661402931" rel="stylesheet">
+    <link href="../css/auto-complete.css?1661402931" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1661402931" rel="stylesheet">
+    <link href="../css/theme.css?1661402931" rel="stylesheet">
+    <link href="../css/tabs.css?1661402931" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1661402931" rel="stylesheet">
     
-    <link href="../css/theme-green.css?1644387652" rel="stylesheet">
+    <link href="../css/theme-green.css?1661402931" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1644387652"></script>
+    <script src="../js/jquery-3.3.1.min.js?1661402931"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -41,7 +41,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../5_python_env/">
+  <body class="" data-url="../7_shiny/">
     <nav id="sidebar" class="">
 
 
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1644387652"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1644387652"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1661402931"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1661402931"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/rc-web-crawler.github.io\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1644387652"></script>
+<script type="text/javascript" src="../js/search.js?1661402931"></script>
 
     
   </div>
@@ -189,13 +189,85 @@
  
   
     
-    <li data-nav-id="/5_python_env/" title="Setup Your Python Environment" class="dd-item
+    <li data-nav-id="/2nd_home/" title="2nd_Home" class="dd-item
+        
+        
+        
+        ">
+      <a href="../2nd_home/">
+          2nd_Home
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5_keyword/" title="Keyword Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../5_keyword/">
+          5. Keyword Analysis
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6_model/" title="Content Analysis" class="dd-item
+        
+        
+        
+        ">
+      <a href="../6_model/">
+          6. Content Analysis
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7_shiny/" title="eCRF Index Shiny App" class="dd-item
         parent
         active
         
         ">
-      <a href="../5_python_env/">
-          5. Appendix: Python Environment Setup
+      <a href="../7_shiny/">
+          7. eCRF Index Shiny App
           
       </a>
       
@@ -261,7 +333,7 @@
                   <span class="links">
                  
                  
-                   Setup Your Python Environment
+                   eCRF Index Shiny App
                  
                   </span>
                 </div>
@@ -270,9 +342,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#prepare-software">Prepare software</a></li>
-    <li><a href="#setup-proxy-servers">Setup proxy servers</a></li>
-    <li><a href="#setup-your-own-environment">Setup your own environment</a></li>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -290,7 +364,7 @@
           
             <h1>
               
-              Setup Your Python Environment
+              eCRF Index Shiny App
             </h1>
           
 
@@ -298,72 +372,13 @@
 
 
 
-	<h2 id="prepare-software">Prepare software</h2>
-<ol>
-<li>Install the software <strong>Anaconda</strong> through <a href="https://sccm.novartis.intra/esd/">Novartis Software Self-Service</a>
-<img src="./1.JPG" alt="image1"></li>
-</ol>
-<h2 id="setup-proxy-servers">Setup proxy servers</h2>
-<ol>
-<li>
-<p>Create a file named <strong>.condarc</strong> located in the path: C:\Users\521id<br>
-<img src="./2.JPG" alt="image2"></p>
-</li>
-<li>
-<p>Open the file .condarc using Notepad++ or UltraEdit as you like</p>
-</li>
-<li>
-<p>Add below texts into this file (do not remove spaces or indents before &ldquo;-&rdquo; and &ldquo;http&rdquo;)</p>
-<blockquote>
-<p>ssl_verify: true</p>
-<p>channels:</p>
-<p>  - defaults</p>
-<p>  - https<a href=""></a>://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</p>
-<p>  - https<a href=""></a>://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</p>
-<p>proxy_servers:</p>
-<p>  http: http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2011</p>
-<p>  https: http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2011</p>
-<p>show_channel_urls: true</p>
-</blockquote>
-</li>
-<li>
-<p>Save and quit</p>
-</li>
-</ol>
-<h2 id="setup-your-own-environment">Setup your own environment</h2>
-<ol>
-<li>
-<p>Open <strong>Anaconda Navigator</strong> to create your own environment. (Be patient after clicking <em>Create</em> and remember the environment name)
-<img src="./3.JPG" alt="image3"></p>
-</li>
-<li>
-<p>Now you can install any application that you needed e.g. Jupyter Notebook, VS Code in your own environment.</p>
-</li>
-<li>
-<p>Search &ldquo;<strong>env</strong>&rdquo; in windows search. Choose <em><strong>Edit environment variables for your account</strong></em>.
-<img src="./4.jpg" alt="image4"></p>
-</li>
-<li>
-<p>Choose <em><strong>Path</strong></em>, and then click <em><strong>Edit</strong></em>. Then click <em><strong>New</strong></em> to add below environment variables. (&ldquo;py37&rdquo; is the environment name which is created in Anaconda Navigator and you can type in your own)
-<img src="./5.JPG" alt="image5">
-<img src="./6.JPG" alt="image6"></p>
-</li>
-<li>
-<p>Open <strong>Anaconda Prompt (your envr name)</strong>. Install packages using below command lines.</p>
-<blockquote>
-<p>pip install --proxy=http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2010 -U flask (package name) --user -i https<a href=""></a>://pypi.tuna.tsinghua.edu.cn/simple</p>
-</blockquote>
-</li>
-<li>
-<p>Open <strong>Command Prompt</strong> by press Windows + R and type &ldquo;cmd&rdquo;. Install packages using below command lines.</p>
-<blockquote>
-<p>C:\Users\521id\.conda\envs\your envr name\python.exe  -m pip install --proxy=http<a href=""></a>://ap-cnzj-proxy.ap.novartis.net:2010 -U flask (package name)  --user -i https<a href=""></a>://pypi.tuna.tsinghua.edu.cn/simple</p>
-</blockquote>
-</li>
-<li>
-<p><strong>Keep learning and enjoy coding!</strong></p>
-</li>
-</ol>
+	<h4 id="instruction">Instruction</h4>
+<p>Users could upload the eCRF pdf file using new template to get the index for eCRF forms and map with SDTM domains.
+According to alpha test results, the coverage rate is 70% ~ 85% and the accuracy rate is 85% ~ 100%.</p>
+<h4 id="limitation">Limitation</h4>
+<p>As expected, mapping results for efficacy-related domains, like QS, ZW, are low in accuracy and coverage, since their
+eCRF forms are always study specific forms</p>
+<h4 id="shiny-app">Shiny App</h4>
 
 
 
@@ -471,6 +486,54 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -492,7 +555,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../4_demo/" title="Demo: Web Scraping with R/Python"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../6_model/" title="Content Analysis"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="../1_web_at_glance/" title="Web at a glance" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -505,19 +568,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1644387652"></script>
-    <script src="../js/perfect-scrollbar.min.js?1644387652"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1644387652"></script>
-    <script src="../js/jquery.sticky.js?1644387652"></script>
-    <script src="../js/featherlight.min.js?1644387652"></script>
-    <script src="../js/highlight.pack.js?1644387652"></script>
+    <script src="../js/clipboard.min.js?1661402931"></script>
+    <script src="../js/perfect-scrollbar.min.js?1661402931"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1661402931"></script>
+    <script src="../js/jquery.sticky.js?1661402931"></script>
+    <script src="../js/featherlight.min.js?1661402931"></script>
+    <script src="../js/highlight.pack.js?1661402931"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1644387652"></script>
-    <script src="../js/learn.js?1644387652"></script>
-    <script src="../js/hugo-learn.js?1644387652"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1661402931"></script>
+    <script src="../js/learn.js?1661402931"></script>
+    <script src="../js/hugo-learn.js?1661402931"></script>
     
         
-            <script src="../mermaid/mermaid.js?1644387652"></script>
+            <script src="../mermaid/mermaid.js?1661402931"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
