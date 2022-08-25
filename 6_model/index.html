@@ -12,22 +12,22 @@
     <title>Content Analysis : Web Crawler</title>
 
     
-    <link href="../css/nucleus.css?1661413020" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1661413020" rel="stylesheet">
-    <link href="../css/hybrid.css?1661413020" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1661413020" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1661413020" rel="stylesheet">
-    <link href="../css/auto-complete.css?1661413020" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1661413020" rel="stylesheet">
-    <link href="../css/theme.css?1661413020" rel="stylesheet">
-    <link href="../css/tabs.css?1661413020" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1661413020" rel="stylesheet">
+    <link href="../css/nucleus.css?1661418842" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1661418842" rel="stylesheet">
+    <link href="../css/hybrid.css?1661418842" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1661418842" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1661418842" rel="stylesheet">
+    <link href="../css/auto-complete.css?1661418842" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1661418842" rel="stylesheet">
+    <link href="../css/theme.css?1661418842" rel="stylesheet">
+    <link href="../css/tabs.css?1661418842" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1661418842" rel="stylesheet">
     
-    <link href="../css/theme-green.css?1661413020" rel="stylesheet">
+    <link href="../css/theme-green.css?1661418842" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1661413020"></script>
+    <script src="../js/jquery-3.3.1.min.js?1661418842"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1661413020"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1661413020"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1661418842"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1661418842"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/rc-web-crawler.github.io\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1661413020"></script>
+<script type="text/javascript" src="../js/search.js?1661418842"></script>
 
     
   </div>
@@ -342,11 +342,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#title-analysis-keyword-prediction">Title Analysis: Keyword Prediction</a></li>
-      </ul>
-    </li>
+    <li><a href="#title-analysis-keyword-prediction">Title Analysis: Keyword Prediction</a></li>
     <li><a href="#pre-prepare-include-packages-and-source-data">Pre-prepare: Include packages and source data</a></li>
     <li><a href="#pre-prepare-including-data-and-building-dictonary">Pre-prepare: Including data and building dictonary</a></li>
     <li><a href="#keyword-cleaning">Keyword Cleaning</a></li>
@@ -378,7 +374,7 @@
 
 
 
-	<h3 id="title-analysis-keyword-prediction">Title Analysis: Keyword Prediction</h3>
+	<h2 id="title-analysis-keyword-prediction">Title Analysis: Keyword Prediction</h2>
 <p>Although most of the articles have keywords with them, there are still
 quite a lot of articles without keywords. Meanwhile, some articles may
 have complicated keywords, which could also increase the difficulty of
@@ -565,7 +561,7 @@ ggplot(cov_clean, aes(x='',y=n,fill=lab1)) +
   geom_bar (stat=&quot;identity&quot;, width=1) + 
   coord_polar (&quot;y&quot;, start=0) +
   geom_text(aes(label = paste0(percentage, &quot;%&quot;)), position = position_stack(vjust=0.5))+
-  labs(x = NULL, y = NULL, fill = NULL) + 
+  labs(x = NULL, y = NULL, fill = NULL,title=&quot;Coverage of cleaned keywords&quot;) + 
   theme_classic() +
   theme(axis.line = element_blank(),
           axis.text = element_blank(),
@@ -573,10 +569,10 @@ ggplot(cov_clean, aes(x='',y=n,fill=lab1)) +
         ) +
   scale_fill_brewer(palette=&quot;Blues&quot;)
 </code></pre>
-<p><img src="./cov1-1.png" alt=""></p>
 
     </div>
-</div></p>
+</div><br>
+<img src="./cov1-1.png" alt=""></p>
 <p>Approximately 73.18% of the papers have cleaned keyword coverage.</p>
 <h2 id="keyword-imputation">Keyword Imputation</h2>
 <p>Next, we will use our dictionary to impute the keyword from the titles.
@@ -644,16 +640,17 @@ ggplot(cov_imp, aes(x='',y=n,fill=lab1)) +
   geom_bar (stat=&quot;identity&quot;, width=1) + 
   coord_polar (&quot;y&quot;, start=0) +
   geom_text(aes(label = paste0(percentage, &quot;%&quot;)), position = position_stack(vjust=0.5))+
-  labs(x = NULL, y = NULL, fill = NULL) + 
+  labs(x = NULL, y = NULL, fill = NULL, title=&quot;Coverage of imputed keywords&quot;) + 
   theme_classic() +
   theme(axis.line = element_blank(),
           axis.text = element_blank(),
           axis.ticks = element_blank()
         ) +
   scale_fill_brewer(palette=&quot;Blues&quot;)
-</code></pre>
-<p><img src="./cov2-1.png" alt=""></p>
-<pre><code>#imputed keyword accuracy 
+
+
+
+#imputed keyword accuracy 
 test &lt;- paper5 %&gt;%
   filter(coverage == 'Y') %&gt;%
   mutate(result = keyword_cleaned %in% keyword_imputed,
@@ -670,7 +667,7 @@ ggplot(cov_acc, aes(x='',y=n,fill=lab1)) +
   geom_bar (stat=&quot;identity&quot;, width=1) + 
   coord_polar (&quot;y&quot;, start=0) +
   geom_text(aes(label = paste0(percentage, &quot;%&quot;)), position = position_stack(vjust=0.5))+
-  labs(x = NULL, y = NULL, fill = NULL) + 
+  labs(x = NULL, y = NULL, fill = NULL,title=&quot;Percent of imputed keywords that exist in cleaned keywords&quot;) + 
   theme_classic() +
   theme(axis.line = element_blank(),
           axis.text = element_blank(),
@@ -678,11 +675,12 @@ ggplot(cov_acc, aes(x='',y=n,fill=lab1)) +
         ) +
   scale_fill_manual(values='#71A92C')
 </code></pre>
-<p><img src="./cov2-2.png" alt=""></p>
 
     </div>
-</div></p>
-<p>Approximately 82.1% of the papers have keyword coverage after
+</div><br>
+<img src="./cov2-1.png" alt="">
+<img src="./cov2-2.png" alt=""><br>
+Approximately 82.1% of the papers have keyword coverage after
 imputation. Also, we can find that all the imputed keywords are within
 cleaned keywords.</p>
 <h2 id="keyword-prediction">Keyword Prediction</h2>
@@ -747,7 +745,7 @@ ggplot(cov_pred, aes(x='',y=n,fill=lab1)) +
   geom_bar (stat=&quot;identity&quot;, width=1) + 
   coord_polar (&quot;y&quot;, start=0) +
   geom_text(aes(label = paste0(percentage, &quot;%&quot;)), position = position_stack(vjust=0.5))+
-  labs(x = NULL, y = NULL, fill = NULL) + 
+  labs(x = NULL, y = NULL, fill = NULL,title=&quot;Coverage of predicted keywords for all papers&quot;) + 
   theme_classic() +
   theme(axis.line = element_blank(),
           axis.text = element_blank(),
@@ -755,10 +753,10 @@ ggplot(cov_pred, aes(x='',y=n,fill=lab1)) +
         ) +
   scale_fill_brewer(palette=&quot;Blues&quot;)
 </code></pre>
-<p><img src="./pred-1.png" alt=""></p>
 
     </div>
-</div></p>
+</div><br>
+<img src="./pred-1.png" alt=""></p>
 <p>After predicting keywords using our dictionary model, the predicted
 keyword coverage of all the papers is approximately 53.16%.</p>
 <h2 id="further-explorations-and-conclusion">Further Explorations and conclusion</h2>
@@ -966,19 +964,19 @@ supervised machine learning. If you are interested, have a try!</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1661413020"></script>
-    <script src="../js/perfect-scrollbar.min.js?1661413020"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1661413020"></script>
-    <script src="../js/jquery.sticky.js?1661413020"></script>
-    <script src="../js/featherlight.min.js?1661413020"></script>
-    <script src="../js/highlight.pack.js?1661413020"></script>
+    <script src="../js/clipboard.min.js?1661418843"></script>
+    <script src="../js/perfect-scrollbar.min.js?1661418843"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1661418843"></script>
+    <script src="../js/jquery.sticky.js?1661418843"></script>
+    <script src="../js/featherlight.min.js?1661418843"></script>
+    <script src="../js/highlight.pack.js?1661418843"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1661413020"></script>
-    <script src="../js/learn.js?1661413020"></script>
-    <script src="../js/hugo-learn.js?1661413020"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1661418843"></script>
+    <script src="../js/learn.js?1661418843"></script>
+    <script src="../js/hugo-learn.js?1661418843"></script>
     
         
-            <script src="../mermaid/mermaid.js?1661413020"></script>
+            <script src="../mermaid/mermaid.js?1661418843"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
